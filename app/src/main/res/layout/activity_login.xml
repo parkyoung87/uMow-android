@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login Activity"/>
+    <LinearLayout
+        style="@style/block"
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <EditText
+            style="@style/block"
+            android:layout_margin="8dp"
+            android:hint="Username" />
+
+        <EditText
+            style="@style/block"
+            android:layout_margin="8dp"
+            android:hint="Password" />
+
+        <Button
+            style="@style/block"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Login"/>
+
+        <Button
+            style="@style/block"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Tom" />
+
+        <Button
+            style="@style/block"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="John" />
+
+        <Button
+            style="@style/block"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Young" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/wrap"
+        android:text="Forgot Password"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        style="@style/wrap"
+        android:text="Create Account"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
