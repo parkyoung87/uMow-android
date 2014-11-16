@@ -34,7 +34,7 @@
             style="@style/block"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:text="John" />
+            android:text="Johnny Tran" />
 
         <Button
             style="@style/block"
