@@ -20,6 +20,10 @@
             android:name=".ActivityLogin"
             android:label="Login"/>
 
+        <activity
+            android:name=".ActivityJohn"
+            android:label="John"/>
+
     </application>
 
 </manifest>
