@@ -11,12 +11,11 @@ import android.widget.Button;
  * Created by xuejianyu on 11/16/14.
  */
 
-public class ActivityLogin extends Activity {
+public class ActivityLogin extends Activity_Base {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
         Button buttonJohn = (Button) findViewById(R.id.activity_login_button_john);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -27,5 +26,9 @@ public class ActivityLogin extends Activity {
             }
         };
         buttonJohn.setOnClickListener(onClickListener);
+    }
+
+    @Override protected int getContentViewResourceId() {
+        return R.layout.activity_login;
     }
 }

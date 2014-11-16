@@ -12,14 +12,17 @@ import android.widget.Toast;
 import com.umow.android.util.UtilToast;
 
 
-public class ActivityUMow extends Activity {
+public class ActivityUMow extends Activity_Base {
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_umow);
 
         Intent intent = new Intent(ActivityUMow.this, ActivityLogin.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override protected int getContentViewResourceId() {
+        return R.layout.activity_umow;
     }
 }
