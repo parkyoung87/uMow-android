@@ -28,6 +28,10 @@
             android:name=".ActivityJohn"
             android:label="John"/>
 
+        <activity
+            android:name=".ActivityYoung"
+            android:label="Young"/>
+
     </application>
 
 </manifest>

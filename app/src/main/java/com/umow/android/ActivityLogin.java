@@ -27,6 +27,16 @@ public class ActivityLogin extends Activity_Base {
                 }
             });
         }
+        {
+            Button buttonYoung = (Button) findViewById(R.id.activity_login_button_young);
+            buttonYoung.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(ActivityLogin.this, ActivityYoung.class);
+                    startActivity(intent);
+                }
+            });
+        }
 
         {
             Button buttonJohn = (Button) findViewById(R.id.activity_login_button_john);

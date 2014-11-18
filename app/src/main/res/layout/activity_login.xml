@@ -38,6 +38,7 @@
             android:text="Johnny Tran" />
 
         <Button
+            android:id="@+id/activity_login_button_young"
             style="@style/block"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
