@@ -10,7 +10,7 @@ import com.umow.android.util.UtilLogger;
  * Created by xuejianyu on 11/16/14.
  */
 
-public abstract class Activity_Base extends Activity{
+public abstract class Activity_Base extends Activity {
 
     protected final String TAG = getClass().getSimpleName();
 

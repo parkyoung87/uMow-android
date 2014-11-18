@@ -21,6 +21,10 @@
             android:label="Login"/>
 
         <activity
+            android:name=".ActivityTom"
+            android:label="Tom"/>
+
+        <activity
             android:name=".ActivityJohn"
             android:label="John"/>
 
