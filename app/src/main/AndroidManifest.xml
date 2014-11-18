@@ -32,6 +32,10 @@
             android:name=".ActivityYoung"
             android:label="Young"/>
 
+        <activity
+            android:name=".ActivitySandbox"
+            android:label="Sandbox"/>
+
     </application>
 
 </manifest>

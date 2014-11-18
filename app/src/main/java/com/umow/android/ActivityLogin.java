@@ -27,6 +27,19 @@ public class ActivityLogin extends Activity_Base {
                 }
             });
         }
+
+        {
+            Button buttonJohn = (Button) findViewById(R.id.activity_login_button_john);
+            View.OnClickListener onClickListener = new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(ActivityLogin.this, ActivityJohn.class);
+                    startActivity(intent);
+                }
+            };
+            buttonJohn.setOnClickListener(onClickListener);
+        }
+
         {
             Button buttonYoung = (Button) findViewById(R.id.activity_login_button_young);
             buttonYoung.setOnClickListener(new View.OnClickListener() {
@@ -39,15 +52,14 @@ public class ActivityLogin extends Activity_Base {
         }
 
         {
-            Button buttonJohn = (Button) findViewById(R.id.activity_login_button_john);
-            View.OnClickListener onClickListener = new View.OnClickListener() {
+            Button buttonLogin = (Button) findViewById(R.id.activity_login_button_login);
+            buttonLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ActivityLogin.this, ActivityJohn.class);
+                public void onClick(View view) {
+                    Intent intent = new Intent(ActivityLogin.this, ActivitySandbox.class);
                     startActivity(intent);
                 }
-            };
-            buttonJohn.setOnClickListener(onClickListener);
+            });
         }
 
     }
