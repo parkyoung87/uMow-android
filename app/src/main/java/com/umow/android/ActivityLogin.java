@@ -62,6 +62,16 @@ public class ActivityLogin extends Activity_Base {
             });
         }
 
+        {
+            ((Button) findViewById(R.id.activity_login_button_createaccount)).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(ActivityLogin.this, ActivityCreateAccount.class);
+                    startActivity(intent);
+                }
+            });
+        }
+
     }
 
     @Override protected int getContentViewResourceId() {

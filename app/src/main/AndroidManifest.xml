@@ -25,6 +25,10 @@
             android:label="Login"/>
 
         <activity
+            android:name=".ActivityCreateAccount"
+            android:label="Login"/>
+
+        <activity
             android:name=".ActivityTom"
             android:label="Tom"/>
 

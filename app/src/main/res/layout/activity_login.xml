@@ -48,11 +48,13 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/activity_login_button_forgotpassword"
         style="@style/wrap"
         android:text="Forgot Password"
         android:layout_alignParentBottom="true"/>
 
     <Button
+        android:id="@+id/activity_login_button_createaccount"
         style="@style/wrap"
         android:text="Create Account"
         android:layout_alignParentBottom="true"
