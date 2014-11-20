@@ -58,12 +58,12 @@ public class ActivityCreateAccount extends Activity_Base {
 
                         if (e == null) {
                             // Hooray! Let them use the app now.
-
                             UtilToast.showToast(ActivityCreateAccount.this, "User created successfully");
                             finish();
                         } else {
                             // Sign up didn't succeed. Look at the ParseException
                             // to figure out what went wrong
+                            UtilToast.showToast(ActivityCreateAccount.this, e.getMessage());
                         }
                     }
                 });
