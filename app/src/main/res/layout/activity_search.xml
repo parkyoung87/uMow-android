@@ -3,9 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     style="@style/match" >
+    
+    <SearchView
+        android:id="@+id/activity_search_searchview"
+        style="@style/block" />
 
-    <TextView
-        style="@style/text_body"
-        android:text="Search Activity"/>
+    <ListView
+        android:id="@+id/activity_search_listview_landscapers"
+        style="@style/match" />
 
 </LinearLayout>
