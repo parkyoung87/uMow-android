@@ -44,6 +44,22 @@
             android:name=".ActivitySandbox"
             android:label="Sandbox"/>
 
+        <activity
+            android:name=".ActivitySearch"
+            android:label="Search"/>
+
+        <activity
+            android:name=".ActivityLandscaper"
+            android:label="Landscaper"/>
+
+        <activity
+            android:name=".ActivityPayment"
+            android:label="Payment"/>
+
+        <activity
+            android:name=".ActivityAdmin"
+            android:label="Admin"/>
+
     </application>
 
 </manifest>

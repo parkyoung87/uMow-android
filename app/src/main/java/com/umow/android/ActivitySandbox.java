@@ -1,6 +1,6 @@
 package com.umow.android;
 
-import android.app.FragmentManager;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -31,14 +31,10 @@ public class ActivitySandbox extends Activity_Base {
         super.onCreate(savedInstanceState);
 
         planets = new ArrayList<String>();
-        planets.add("Mercury");
-        planets.add("Venus");
-        planets.add("Earth");
-        planets.add("Mars");
-        planets.add("Jupiter");
-        planets.add("Saturn");
-        planets.add("Uranus");
-        planets.add("Neptune");
+        planets.add("Search Activity");
+        planets.add("Landscaper Activity");
+        planets.add("Payment Activity");
+        planets.add("Admin Activity");
 
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_sandbox_drawerLayout);
         lvNavigationDrawer = (ListView) findViewById(R.id.activity_sandbox_navigationDrawer);
@@ -47,14 +43,36 @@ public class ActivitySandbox extends Activity_Base {
         lvNavigationDrawer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                selectItem(position);
+
+                // Search Activity
+                if(position == 0) {
+                    Intent intent = new Intent(ActivitySandbox.this, ActivitySearch.class);
+                    startActivity(intent);
+                }
+                // Landscaper
+                else if(position == 1) {
+                    Intent intent = new Intent(ActivitySandbox.this, ActivityLandscaper.class);
+                    startActivity(intent);
+                }
+                // Payment
+                else if(position == 2) {
+                    Intent intent = new Intent(ActivitySandbox.this, ActivityPayment.class);
+                    startActivity(intent);
+                }
+                // Admin
+                else if(position == 3) {
+                    Intent intent = new Intent(ActivitySandbox.this, ActivityAdmin.class);
+                    startActivity(intent);
+                }
+
+                drawerLayout.closeDrawer(lvNavigationDrawer);
             }
         });
 
         drawerToggle = new ActionBarDrawerToggle(
                 this,                  /* host Activity */
                 drawerLayout,         /* DrawerLayout object */
-                R.drawable.ic_launcher,  /* nav drawer icon to replace 'Up' caret */
+                R.drawable.actionbar_hamburger,  /* nav drawer icon to replace 'Up' caret */
                 R.string.drawer_open,  /* "open drawer" description */
                 R.string.drawer_close  /* "close drawer" description */
         ) {
@@ -76,15 +94,6 @@ public class ActivitySandbox extends Activity_Base {
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
-    }
-
-    private void selectItem(int position) {
-        // Create a new fragment and specify the planet to show based on position
-
-        // Highlight the selected item, update the title, and close the drawer
-        lvNavigationDrawer.setItemChecked(position, true);
-        setTitle(planets.get(position));
-        drawerLayout.closeDrawer(lvNavigationDrawer);
     }
 
     @Override
