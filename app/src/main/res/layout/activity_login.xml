@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/match"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#6fc435">
 
     <LinearLayout
         style="@style/block"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_above="@+id/activity_login_button_login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
 
         <EditText
             style="@style/block"
@@ -17,47 +22,63 @@
             android:layout_margin="8dp"
             android:hint="Password" />
 
-        <Button
-            android:id="@+id/activity_login_button_login"
-            style="@style/block"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Login"/>
-
-        <Button
-            android:id="@+id/activity_login_button_tom"
-            style="@style/block"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Tom" />
-
-        <Button
-            android:id="@+id/activity_login_button_john"
-            style="@style/block"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Johnny Tran" />
-
-        <Button
-            android:id="@+id/activity_login_button_young"
-            style="@style/block"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Young" />
-
     </LinearLayout>
 
     <Button
         android:id="@+id/activity_login_button_forgotpassword"
         style="@style/wrap"
         android:text="Forgot Password"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/activity_login_button_createaccount"
         style="@style/wrap"
         android:text="Create Account"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_login_button_young"
+        style="@style/block"
+        android:text="Young"
+        android:layout_above="@+id/activity_login_button_forgotpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_login_button_john"
+        style="@style/block"
+        android:text="Johnny Tran"
+        android:layout_above="@+id/activity_login_button_young"
+        android:layout_alignRight="@+id/activity_login_button_young"
+        android:layout_alignEnd="@+id/activity_login_button_young"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_login_button_tom"
+        style="@style/block"
+        android:text="Tom"
+        android:layout_above="@+id/activity_login_button_john"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_login_button_login"
+        style="@style/block"
+        android:text="Login"
+        android:layout_above="@+id/activity_login_button_tom"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/umow" />
 
 </RelativeLayout>
