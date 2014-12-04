@@ -6,6 +6,8 @@
     
     <SearchView
         android:id="@+id/activity_search_searchview"
+        android:inputType="number"
+        android:queryHint="Enter Zipcode"
         style="@style/block" />
 
     <ListView

@@ -7,7 +7,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -36,7 +35,15 @@ public class ActivitySearch extends Activity_Base {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String queryText) {
-                UtilToast.showToast(ActivitySearch.this, queryText);
+
+                // checks if zip is valid
+                if(queryText.length() < 5 || queryText.length() > 5) {
+                    UtilToast.showToast(ActivitySearch.this, "Please enter a valid 5-digit zipcode");
+                    return false;
+                }
+
+                // test toast display
+                // UtilToast.showToast(ActivitySearch.this, queryText);
 
                 final ProgressDialog progressDialog = new ProgressDialog(ActivitySearch.this);
                 progressDialog.setMessage("Retrieving Users...");
