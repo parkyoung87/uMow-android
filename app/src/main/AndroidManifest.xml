@@ -21,7 +21,7 @@
         </activity>
 
         <activity
-            android:name=".ActivityLogin"
+            android:name=".ActivityFirstPage"
             android:label="Login"/>
 
         <activity
@@ -29,16 +29,12 @@
             android:label="Login"/>
 
         <activity
-            android:name=".ActivityTom"
-            android:label="Tom"/>
-
-        <activity
             android:name=".ActivityJohn"
             android:label="John"/>
 
         <activity
-            android:name=".ActivityYoung"
-            android:label="Young"/>
+            android:name=".ActivityLogin"
+            android:label="Login"/>
 
         <activity
             android:name=".ActivitySandbox"
