@@ -8,10 +8,12 @@
         android:id="@+id/activity_search_searchview"
         android:inputType="number"
         android:queryHint="Enter Zipcode"
-        style="@style/block" />
+        style="@style/block"
+        android:visibility="visible" />
 
     <ListView
         android:id="@+id/activity_search_listview_landscapers"
-        style="@style/match" />
+        style="@style/match"
+        android:background="#6fc435" />
 
 </LinearLayout>

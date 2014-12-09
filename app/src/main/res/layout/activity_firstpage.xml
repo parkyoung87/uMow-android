@@ -15,12 +15,18 @@
         <EditText
             style="@style/block"
             android:layout_margin="8dp"
-            android:hint="Username" />
+            android:hint="Username"
+            android:id="@+id/Activity_firstpage_username"
+            android:textColor="@color/white" />
 
         <EditText
             style="@style/block"
             android:layout_margin="8dp"
-            android:hint="Password" />
+            android:hint="Password"
+            android:id="@+id/activity_firstpage_password"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:password="true" />
 
     </LinearLayout>
 
